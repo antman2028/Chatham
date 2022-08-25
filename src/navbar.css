@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+.resize {
+    width: 40px;
+    height: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 50px;
+    z-index: 999;
+}
+
+header .logo {
+    position: relative;
+}
+.sitename{
+    position: relative;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.6s;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    cursor:default;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li .lin{
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-weight: 900;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background: url('./images/courthouse.jpg');
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+header.sticky{
+    padding: 20px 60px;
+    background-color: #fff;
+}
+
+header.sticky .sitename{
+    color:#000
+}
+header.sticky ul li .lin{
+    color: #000;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box .title {
+    color: #FFF;
+    
+}
+.box p{
+    padding-top: 15px;
+    color: white;
+}
+
+.box .title > span {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.box .title .under {
+    font-size: small;
+    font-weight: 400;
+    margin-left: 35%;
+}
+
+.flexbox-container{
+    display: flex;
+    justify-content: center;
+}
+
+.space{
+    display: flex;
+    min-height: 15vh;
+}
+
+.page-title{
+    padding: 3vh;
+    padding-bottom: 4vh;
+    font-weight: 600;
+    font-size: 50px;
+    color: #5064a9;
+    cursor: default;
+}
+
+.oldmanpic{
+    display: flex;
+    min-height: 55vh;
+    background-image: url('./images/churchill.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    color: orange;
+}
+
+header ul li .lin:hover{
+    text-shadow: 0 0px 15px #ffffff;
+}
+
+header.sticky ul li .lin:hover{
+    color: #728ef5;
+    text-shadow: 0 0px 10px #5064a9;
+}
+.scholar{
+    background-image: url('./images/fund.jpg');
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+.chatham{
+    background: url('./images/chatham.jpg');
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+.town{
+    background: url('./images/downtown.jpg');
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+.aBox{
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aBox p{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: white;
+    max-width: 450px;
+    font-weight: 10;
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    word-spacing: 3px;
+    line-height: 20px;
+}
+
+.aBox h1{
+    color: #fff;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+h1.card1Home{
+    color: white;
+    font-size: 3rem;
+    cursor:default;
+}
+
+p.card1Home{
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: white;
+    max-width: 450px;
+    font-weight: 10;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    word-spacing: 3px;
+    line-height: 20px;
+    text-align: center;
+    cursor:default;
+}
+
+h1.card2Home{
+    color: #5064a9;
+    font-size: 2rem;
+    cursor:default;
+    text-align: center;
+}
+
+p.card2Home{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    max-width: 450px;
+    font-weight: 10;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    word-spacing: 3px;
+    line-height: 20px;
+    text-align: center;
+    cursor:default;
+}
+
+p.card1Act{
+    font-size: 20px;
+}
+
+.hands{
+    background: url('./images/hands.png');
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+.cover-thing{
+    background: url('./images/cover.jpg');
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+.light{
+    background: url('./images/hands.png');
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+}
+
+h1.card2Act{
+    text-align: center;
+    font-size: 25px;
+    color: #5064a9;
+}
+p.card2Act{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    max-width: 450px;
+    font-weight: 10;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    word-spacing: 3px;
+    line-height: 20px;
+    text-align: center;
+    cursor:default;
+}
+
+a.footer{
+    color: #fff;
+    padding-left: 2px;
+}
+
+.flexbox-containermembers{
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4e2;
+}
+
+.diffColor{
+    background-color: #f4f4e2;
+}
+
+h1.cardAtkins{
+    color: #5064a9;
+}
+
+p.cardAtkins{
+    color: black;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    line-height: 3vh;
+}
+
+.Atkinswrapper{
+    display: flex;
+    max-width: 1500px;
+    align-items: center;
+    justify-content: center;
+}
+.atkin{
+    background: url('./images/chatham.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.none{
+    padding: 3px;
+}
+
+.none:visited{
+    text-decoration: none;
+    color: #0a66c2;
+}
+
+.none:hover{
+    text-shadow: 0 0px 20px #5064a9;
+}
+
+p.leaderCardp{
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+}
+
+.controlImg{
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    color: orange;
+}
+
+.opposite:hover{
+    color: #f4f4e2;
+}
+
+.white{
+    color: #5064a9;
+    font-size: larger;
+}
+
+h1.NewCard{
+    color: #5064a9;
+    text-align: left;
+}
