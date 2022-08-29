@@ -8,6 +8,7 @@ import Programs from './pages/programs';
 import Test from './pages/Test';
 import FundPage from './pages/FundPage';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import AArticle from './pages/AArticle';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="news" element={<News/>}/>
           <Route path="tester" element={<Test/>}/>
           <Route path="AtkinsScholarFund" element={<FundPage/>}/>
+          <Route path="testarticle" element={<AArticle/>}/>
         </Routes>
       </BrowserRouter>
   );

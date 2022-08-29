@@ -39,11 +39,18 @@ const Act = () => {
         }}>
           <h1 className='card2Act'>Sponsor a Chatham Scholar</h1>
           <p className='card2Act'>Chip in as little as $20 to the Atkins Chatham Scholars Fund, and send one needy Chathamite to the school of their dreams.</p>
-          <Button variant='outlined'
-            sx={{
-              borderRadius: '0px',
-            }}
-            > Donate Now</Button>
+          <Button variant='outlined' disabled={false}
+                    sx={{
+                    color: '#5064a9',
+                    borderRadius: 0,
+                    borderColor:"#5064a9",
+                    '&:hover': {
+                        backgroundColor: '#5064a9',
+                        color: '#f4f4e2',
+                    }
+                    }}>
+                    <a className='opposite' href="">Donate Now</a>
+                    </Button>
         </Box>
         <Box sx={{
           flexGrow: 1,
@@ -65,11 +72,18 @@ const Act = () => {
         }}>
           <h1 className='card2Act'>Volunteer Your Time</h1>
           <p className='card2Act'>Volunteer anywhere, anytime in Chatham with CCS Serves.</p>
-          <Button variant='outlined'
-            sx={{
-              borderRadius: '0px',
-            }}
-            > Volunteer Today</Button>
+          <Button variant='outlined' disabled={false}
+                    sx={{
+                    color: '#5064a9',
+                    borderRadius: 0,
+                    borderColor:"#5064a9",
+                    '&:hover': {
+                        backgroundColor: '#5064a9',
+                        color: '#f4f4e2',
+                    }
+                    }}>
+                    <a className='opposite' href="">Volunteer Today</a>
+                    </Button>
         </Box>
         <Box sx={{
           flexGrow: 1,
@@ -89,11 +103,18 @@ const Act = () => {
         }}>
           <h1 className='card2Act'>Get in Touch</h1>
           <p className='card2Act'>What ideas and feedback do you have? Leave a message and we'll get back to you.</p>
-          <Button variant='outlined'
-            sx={{
-              borderRadius: '0px',
-            }}
-            > Contact Us</Button>
+          <Button variant='outlined' disabled={false}
+                    sx={{
+                    color: '#5064a9',
+                    borderRadius: 0,
+                    borderColor:"#5064a9",
+                    '&:hover': {
+                        backgroundColor: '#5064a9',
+                        color: '#f4f4e2',
+                    }
+                    }}>
+                    <a className='opposite' href="">Contact Us</a>
+                    </Button>
         </Box>
       </div>
       <Footer/>

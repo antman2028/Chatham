@@ -32,14 +32,14 @@ const LeaderCard = (props) => {
                 <p className='leaderCardp'>{props.position}</p>
                 <Box 
                 sx={{display:"flex", justifyContent: "center", width: '100%'}}>
-                  <IconButton size='large' href={props.linkedIn} sx={{color: '#0a66c2',
+                  <IconButton disabled={props.contact1} size='large' href={props.linkedIn} sx={{color: '#0a66c2',
                   '&:hover': {
                         backgroundColor: '#0a66c2',
                         color: '#f4f4e2',
                     }}}>
                     <LinkedInIcon fontSize='large' color='#0a66c2'/>
                   </IconButton>
-                  <IconButton size='large' href={props.email} sx={{color: '#0a66c2',
+                  <IconButton disabled={props.contact2} size='large' href={props.email} sx={{color: '#0a66c2',
                   '&:hover': {
                     backgroundColor: '#0a66c2',
                     color: '#f4f4e2',

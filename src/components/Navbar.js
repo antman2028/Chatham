@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
         <header className="again">
             <div className="logo">
-                    <Link to='/tester'><img className='resize' src={require('./chathamyouthlogo.jpeg')}/></Link>
+                    <Link to='/home'><img className='resize' src={require('./chathamyouthlogo.jpeg')}/></Link>
             </div>
             <div className="site"><span>Chatham<span>Youth</span></span></div>
             <ul>

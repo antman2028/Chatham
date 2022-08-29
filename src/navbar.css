@@ -314,6 +314,7 @@ a.footer{
     display: flex;
     justify-content: center;
     background-color: #f4f4e2;
+    flex-direction: column;
 }
 
 .diffColor{
@@ -381,4 +382,54 @@ p.leaderCardp{
 h1.NewCard{
     color: #5064a9;
     text-align: left;
+    font-size: 2.5vh;
+}
+
+h4.NewCard{
+    padding-top: 3vh;
+    padding-bottom: 1.5vh;
+    max-width: 100%;
+    font-size: 1.6vh;
+}
+
+p.NewCard{
+    padding-bottom: 2vh;
+    font-size: 1.5vh;
+}
+
+.circle{
+    min-width: 40vh;
+    min-height: 40vh;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 10;
+    padding: auto;
+    margin: 1vh
+}
+
+h1.NewsContent{
+    padding-top: 4vh;
+    color: #5064a9;
+    font-size: 4vh;
+    font-weight: 100000;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+h4.NewsContent{
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+}
+
+p.NewsContent{
+    padding-bottom: 3vh;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    font-weight: 100;
+    font-size: 1.7vh;
+    line-height: 2.3vh;
+}
+
+h2.members{
+    font-size: 2.5vh;
 }

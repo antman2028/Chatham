@@ -1,33 +1,25 @@
-import { Box } from '@mui/material'
 import React from 'react'
 import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
-import Spacer from '../components/Spacer'
 import '../navbar.css'
-
+import MemberCard from '../components/memberCard'
+import Footer from '../components/footer'
+import querySnapshot from '../firebase'
+import final from '../firebase'
 
 const Members = () => {
-  const lst = [
-    {
-      Name: 'Antonio Salinas' 
-    },
-    {
-      Name: 'Tony Sal'
-    },
-  ]
-
-  lst.map(thing => console.log(thing.Name.split(' ')[0] + " " + thing.Name.split(' ')[1]))
+  const num = 0;
+  console.log(final)
   return (
     <>
       <Navbar/>
       <div className='flexbox-containermembers'>
         <PageTitle title="Members"/>
-        <Spacer/>
-        <Box
-        >
-
-        </Box>
+        {final.map(user => (<MemberCard key={user.id} name={user.FirstName}/>))}
+        {final.forEach(data => (console.log(data)))}
       </div>
+      
+      <Footer/>
     </>
   )
 }
