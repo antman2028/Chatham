@@ -12,13 +12,6 @@ const firebaseApp = initializeApp({
 
 const db = getFirestore(firebaseApp);
 const lst1 = collection(db, 'Users');
-let final = []
 
-async function main() {
-    const data = await getDocs(lst1);
-    data.forEach(doc => (final.push({...doc.data, id: doc.id})))
-}
 
-main();
-
-export default final
+export default lst1

@@ -60,14 +60,14 @@ const Leadership = () => {
         <LeaderCard 
         firstName="Alexander"
         lastName="Cook"
-        position="Advisor"
+        position="Mentor-Advisor"
         email="acook8@outlook.com"
         linkedIn="https://www.linkedin.com/in/alexdcoo"
         />
         <LeaderCard
         firstName="Antonio"
         lastName="Salinas"
-        position="Advisor"
+        position="Mentor-Advisor"
         email="mailto:tonyjr1784@gmail.com"
         />
         

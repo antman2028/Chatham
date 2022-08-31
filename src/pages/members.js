@@ -1,22 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
 import '../navbar.css'
 import MemberCard from '../components/memberCard'
 import Footer from '../components/footer'
-import querySnapshot from '../firebase'
-import final from '../firebase'
+import lst1 from '../firebase'
+import { getDocs, onSnapshot } from 'firebase/firestore'
+
+
 
 const Members = () => {
-  const num = 0;
-  console.log(final)
+
+  const [Users, setUsers] = useState([])
+
+  useEffect(() => {
+    getDocs(lst1)
+      .then((snapshot) => {
+        let temp = []
+        snapshot.docs.forEach((doc) => {
+          temp.push({...doc.data(), id: doc.id})
+        })
+        setUsers(temp)
+      })
+  },[])
+
   return (
     <>
       <Navbar/>
       <div className='flexbox-containermembers'>
         <PageTitle title="Members"/>
-        {final.map(user => (<MemberCard key={user.id} name={user.FirstName}/>))}
-        {final.forEach(data => (console.log(data)))}
+        {Users.map(name => (<MemberCard key={name.id} name={name.FirstName +" " + name.LastName}/>))}
       </div>
       
       <Footer/>
