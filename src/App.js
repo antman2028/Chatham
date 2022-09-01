@@ -9,22 +9,24 @@ import Test from './pages/Test';
 import FundPage from './pages/FundPage';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import AArticle from './pages/AArticle';
+import Newnav from './components/Newnav';
 
 function App() {
   return (
       <>
-      <h1>Hello there Me</h1>
+      <h1>Hello there Me Antonio</h1>
       <BrowserRouter>
+      <Newnav/>
         <Routes>
           <Route path='' element={<Home/>}/>
-          <Route path='/Chatham/home' element={<Home/>}/>
-          <Route path="act" element={<Act/>}/>
-          <Route path="leadership" element={<Leadership/>}/>
-          <Route path="members" element={<Members/>}/>
-          <Route path="news" element={<News/>}/>
-          <Route path="tester" element={<Test/>}/>
-          <Route path="AtkinsScholarFund" element={<FundPage/>}/>
-          <Route path="testarticle" element={<AArticle/>}/>
+          <Route path='/home' element={<Home/>}/>
+          <Route path="/act" element={<Act/>}/>
+          <Route path="/leadership" element={<Leadership/>}/>
+          <Route path="/members" element={<Members/>}/>
+          <Route path="/news" element={<News/>}/>
+          <Route path="/tester" element={<Test/>}/>
+          <Route path="/AtkinsScholarFund" element={<FundPage/>}/>
+          <Route path="/testarticle" element={<AArticle/>}/>
         </Routes>
       </BrowserRouter>
       </>
