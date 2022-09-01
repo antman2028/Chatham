@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Chatham/static/css/main.6aeccb82.css",
-    "main.js": "/Chatham/static/js/main.f9d1ab88.js",
+    "main.js": "/Chatham/static/js/main.720ca267.js",
     "static/media/downtown.jpg": "/Chatham/static/media/downtown.6b6fe8518a1ba0df4bdf.jpg",
     "static/media/churchill.jpg": "/Chatham/static/media/churchill.008086e61813dc692e1e.jpg",
     "static/media/courthouse.jpg": "/Chatham/static/media/courthouse.67fe98735adef334b080.jpg",
@@ -16,10 +16,10 @@
     "static/media/Posada.jpg": "/Chatham/static/media/Posada.412e8ec1aa75339968f5.jpg",
     "index.html": "/Chatham/index.html",
     "main.6aeccb82.css.map": "/Chatham/static/css/main.6aeccb82.css.map",
-    "main.f9d1ab88.js.map": "/Chatham/static/js/main.f9d1ab88.js.map"
+    "main.720ca267.js.map": "/Chatham/static/js/main.720ca267.js.map"
   },
   "entrypoints": [
     "static/css/main.6aeccb82.css",
-    "static/js/main.f9d1ab88.js"
+    "static/js/main.720ca267.js"
   ]
 }
