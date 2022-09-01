@@ -64,7 +64,7 @@ const buttonVariants = {
             alignItems: 'center',
             flexDirection: 'column',
           }}>
-            <h1 className='card1Home'>A</h1>
+            <h1 className='card1Home'>About</h1>
             <p className='card1Home'>At Chatham Youth, our mission is to make youth voices heard from every corner of our county. Today, we're over 150 members strong and hard at work. Through the Atkins Chatham Scholars Fund, CCS Serves, and so much more, we're changing Chatham County, one initiative at a time.</p>
             <Button variant='outlined' disabled={false}
                     sx={{

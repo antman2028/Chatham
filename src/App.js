@@ -12,6 +12,8 @@ import AArticle from './pages/AArticle';
 
 function App() {
   return (
+      <>
+      <h1>Hello</h1>
       <BrowserRouter>
         <Routes>
           <Route path='' element={<Home/>}/>
@@ -25,6 +27,7 @@ function App() {
           <Route path="testarticle" element={<AArticle/>}/>
         </Routes>
       </BrowserRouter>
+      </>
   );
 }
 
