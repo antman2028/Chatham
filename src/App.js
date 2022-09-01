@@ -13,11 +13,11 @@ import AArticle from './pages/AArticle';
 function App() {
   return (
       <>
-      <h1>Hello</h1>
+      <h1>Hello there</h1>
       <BrowserRouter>
         <Routes>
           <Route path='' element={<Home/>}/>
-          <Route path='home' element={<Home/>}/>
+          <Route path='/Chatham/home' element={<Home/>}/>
           <Route path="act" element={<Act/>}/>
           <Route path="leadership" element={<Leadership/>}/>
           <Route path="members" element={<Members/>}/>
