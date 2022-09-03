@@ -1,5 +1,4 @@
 {
-  "homepage": "http://antman2028.githun.io/Chatham",
   "name": "frontend1",
   "version": "0.1.0",
   "private": true,
@@ -20,8 +19,6 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
@@ -43,8 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
