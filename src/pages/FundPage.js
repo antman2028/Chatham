@@ -8,6 +8,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Footer from '../components/footer'
 import { Button } from '@mui/material'
 import { minHeight } from '@mui/system'
+import { useState, useEffect } from 'react'
 
 
 const FundPage = () => {
@@ -19,12 +20,32 @@ const FundPage = () => {
         stopOnHover: true,
         thumbWidth: '200',
         showStatus: false,
-        interval: Number('interval', 10000, {}, valuesGroupId),
     })
+
+
+    const [windowSize, setWindowSize] = useState(getWindowSize());
+    
+    useEffect(() => {
+        function handleWindowResize() {
+        setWindowSize(getWindowSize());
+        }
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+        window.removeEventListener('resize', handleWindowResize);
+
+        };
+    }, []);
+
+    function getWindowSize() {
+      const {innerWidth, innerHeight} = window;
+      return {innerWidth, innerHeight};
+    }
 
   return (
     <>
-        <Navbar/>
+        <Navbar size={windowSize.innerWidth}/>
         <Box
         sx={{
             display: 'flex',
@@ -65,13 +86,12 @@ const FundPage = () => {
             <div className='Atkinswrapper'>
                 <Box 
                 sx={{
-                    minWidth: '50%',
-                    border: '3px solid orange',
-                    minHeight: '20vh',
+                    minWidth:'12rem',
+                    minHeight:'15rem'
                 }}
-                className='atkin'
+                className='Simon pic-resize'
                 />
-                <Box sx={{
+                <Box className="point-slides" sx={{
                     flexGrow:1,
                     display: 'flex',
                     justifyContent: 'center',
@@ -101,17 +121,17 @@ const FundPage = () => {
                 background: '#f4f4e2',
                 alignItems: 'center',
                 justifyContent: 'center',
+                padding: '10px'
             }}>
             <div className='Atkinswrapper'>
                 <Box 
                 sx={{
-                    minWidth: '50%',
-                    border: '3px solid orange',
-                    minHeight: '20vh',
+                    minWidth:'22rem',
+                    minHeight:'12rem'
                 }}
-                className='atkin'
+                className='Duke pic-resize'
                 />
-                <Box sx={{
+                <Box className="point-slides" sx={{
                     flexGrow:1,
                     display: 'flex',
                     justifyContent: 'center',
@@ -145,13 +165,12 @@ const FundPage = () => {
             <div className='Atkinswrapper'>
                 <Box 
                 sx={{
-                    minWidth: '50%',
-                    border: '3px solid orange',
-                    minHeight: '20vh',
+                    minWidth:'22rem',
+                    minHeight:'7rem'
                 }}
-                className='atkin'
+                className='CE2 pic-resize'
                 />
-                <Box sx={{
+                <Box className="point-slides" sx={{
                     flexGrow:1,
                     display: 'flex',
                     justifyContent: 'center',
@@ -176,7 +195,7 @@ const FundPage = () => {
             </div>
             </Box>
         </Carousel>
-        <Footer/>
+        <Footer size={windowSize.innerWidth}/>
     </>
   )
 }

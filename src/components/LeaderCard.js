@@ -23,12 +23,13 @@ const LeaderCard = (props) => {
         flexGrow: 1,
         flexDirection: 'column', 
         minHeight: '70vh',
-        maxWidth: '30vw',
+        padding: '5px', 
+        maxWidth: '50vw'
         }}>
             <Box className='controlImg' sx={{flexGrow: 3, backgroundColor: 'orange', backgroundSize: 'cover', backgroundPosition: 'center', display: 'flex', backgroundImage:`url(${images[`${props.firstName}.jpg`]})`}}>
             </Box>
             <Box sx={{flexGrow: 1, backgroundColor: '#f4f4e2', display: 'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center', maxHeight:'35%'}}>
-                <h1>{props.firstName + " " + props.lastName}</h1>
+                <h1 className='leaderCard'>{props.firstName + " " + props.lastName}</h1>
                 <p className='leaderCardp'>{props.position}</p>
                 <Box 
                 sx={{display:"flex", justifyContent: "center", width: '100%'}}>

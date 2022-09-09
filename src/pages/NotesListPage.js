@@ -21,10 +21,7 @@ const Home = () => {
         });
     });
 });
-  const y = []
-  const x = document.getElementsByClassName('PhoneVersion');
-
-  console.log(x)
+  
 const [windowSize, setWindowSize] = useState(getWindowSize());
     
     useEffect(() => {
@@ -64,7 +61,6 @@ const buttonVariants = {
         <>
     
       <Newnav size={windowSize.innerWidth} />
-      <h1>{windowSize.innerWidth}</h1> 
       <Box sx={{justifyContent:'center', alignItems:'center', textAlign:'center', margin:0, padding:0, translate:'0 -2vh',
       zIndex:99
     }}>
@@ -156,7 +152,7 @@ const buttonVariants = {
             flexGrow: 1,
             backgroundColor: 'orange',
           }}
-          className='scholar'
+          className='Fund2'
           />
         </Box>
         </div>
@@ -223,7 +219,6 @@ const buttonVariants = {
         <>
     
       <Newnav size={windowSize.innerWidth} />
-      <h1>{windowSize.innerWidth}</h1> 
       <Box sx={{justifyContent:'center', alignItems:'center', textAlign:'center', margin:0, padding:0, translate:'0 -2vh',
       zIndex:99
     }}>
@@ -246,9 +241,9 @@ const buttonVariants = {
           flexDirection: 'column'
         }}>
           <Box sx={{
-            flexGrow:2,
+            flexGrow:4,
             backgroundColor:'orange',
-            minHeight:'15vh'
+            minHeight:'25vh'
           }}
           className='chatham'
           />
@@ -296,7 +291,7 @@ const buttonVariants = {
             boxShadow: '0 1px 5px #000'
 
           }}
-          className='scholar'
+          className='Fund2'
           />
           <Box sx={{
             display: 'flex',
@@ -389,7 +384,7 @@ const buttonVariants = {
 
         />
       </section>
-      <Footer/>
+      <Footer size={windowSize.innerWidth} />
         </>
       }
     </>

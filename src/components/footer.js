@@ -1,19 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../navbar.css'
 import { Box } from '@mui/material'
 
-const Footer = () => {
+const Footer = (props) => {
+  let fonting = '2vh'
+  if (props.size < 1000){
+    fonting = '1.1vh'
+  }
   return (
     <>
         <Box
         sx = {{
             display: 'flex',
-            backgroundColor: '#2a3457',
+            backgroundColor: '#f4f4e2',
             minHeight: '12vh',
             justifyContent: 'center',
             alignItems: 'end',
-            color: 'white',
+            color: '#5064a9',
             textDecoration: 'none',
+            fontSize: fonting,
+            fontWeight: '1000'
         }}
          >
             <p>©2022 by Chatham Youth NC | </p>

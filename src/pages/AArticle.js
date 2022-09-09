@@ -2,11 +2,31 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import NewsContent from '../components/NewsContent'
 import Footer from '../components/footer'
+import { useState, useEffect } from 'react'
 
 const AArticle = () => {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+    
+    useEffect(() => {
+        function handleWindowResize() {
+        setWindowSize(getWindowSize());
+        }
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => {
+        window.removeEventListener('resize', handleWindowResize);
+
+        };
+    }, []);
+
+    function getWindowSize() {
+      const {innerWidth, innerHeight} = window;
+      return {innerWidth, innerHeight};
+    }
   return (
     <>
-        <Navbar/> 
+        <Navbar size={windowSize.innerWidth}/> 
         <NewsContent
         title="Atkins Chatham Scholars Fund Co-Founder Patrick McCaw Tapped for Prestigious Jane Street AMP Program"
         imgName="chatham"
@@ -18,7 +38,7 @@ const AArticle = () => {
         "Chatham Youth Founder & President Alexander Cook said, 'Patrick and I have been best friends since the first grade, so I could say this comes as a surprise, but that wouldn't be true. He's a fast learner, strategic thinker, expert problem-solver, and valedictorian to show for it. Nobody deserves it more.'"
       ]}
         />
-        <Footer/>
+        <Footer size={windowSize.innerWidth} />
     </>
   )
 }

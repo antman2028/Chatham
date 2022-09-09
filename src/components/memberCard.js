@@ -10,12 +10,12 @@ const MemberCard = (props) => {
         justifyContent:'center',
         alignItems:'center',
         display:'flex',
-        border: '3px solid #5064a9',
         minHeight:'5vh',
-        minWidth: '900px',
         borderRadius:'15px',
         margin:'3px',
-        cursor:'default'
+        cursor:'default',
+        paddingLeft: '5px',
+        paddingRight: '5px'
       }}
       component={motion.div}
       whileHover={{ boxShadow:'0 0px 10px #000', backgroundColor:'#5064a9', color:'#f4f4e2'}}

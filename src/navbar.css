@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .resize {
-    width: 40px;
+    width: 50px;
     height: auto;
+    border-radius: 5px;
 }
 
 html{
@@ -179,12 +180,7 @@ header.sticky ul li .lin:hover{
     color: #728ef5;
     text-shadow: 0 0px 10px #5064a9;
 }
-.scholar{
-    background-image: url('./images/fund.jpg');
-    background-size: cover;
-    z-index: -1;
-    background-position: center;
-}
+
 
 .chatham{
     background: url('./images/chatham.jpg');
@@ -325,7 +321,7 @@ p.card2Act{
 }
 
 a.footer{
-    color: #fff;
+    color: #5064a9;
     padding-left: 2px;
 }
 
@@ -380,13 +376,23 @@ p.cardAtkins{
 p.leaderCardp{
     padding-top: 2vh;
     padding-bottom: 1vh;
+    text-align: center;
 }
 
+h1.leaderCard{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 3vh;
+}
 .controlImg{
     background-size: cover;
     background-position: center;
     z-index: -1;
     color: orange;
+}
+
+.opposite:visited{
+    color: #5064a9
 }
 
 .opposite:hover{
@@ -453,3 +459,108 @@ h2.members{
     font-size: 2.5vh;
 }
 
+
+
+@media only screen and (max-width: 1000px) {
+    .moving{
+        flex-direction: column-reverse;
+        border-radius: 15px;
+    }
+    .moving2{
+        margin: 10px;
+        max-width: 100%;
+        border-radius: 20px;
+        margin-top: 0;
+    }
+    #moving3{
+        flex-grow: 1;
+        min-height: 30vh;
+        border-radius: 20px;
+        margin: 10px;
+        margin-bottom: 0;
+    }
+    .NewsContentPhone h1{
+        font-size: 2.5vh;
+    }
+    .NewsContentPhone p{
+        font-size: 90%;
+    }
+    .Atkinswrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10px;
+    }
+    .Atkinswrapper h1{
+        padding-top: 2vh;
+    }
+    .point-slides{
+        max-width: 100%;
+    }
+    .pic-resize{
+        min-width: 70vw;
+        min-height: 20vw;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .moving{
+        flex-direction: row;
+    }
+    .moving2{
+        max-width: 50%;
+    }
+    .point-slides{
+        max-width: 50%;
+    }
+    .pic-resize{
+        min-width: 20rem;
+        min-height: 27rem;
+    }
+}
+
+.Simon{
+    background: url('./images/Simon.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+.Duke{
+    background: url('./images/Duke.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.CE2{
+    background: url('./images/CE2.png');
+    background-size: cover;
+    background-position: center;
+}
+.Lightbulb{
+    background: url('./images/Lightbulb.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.Flyer{
+    background: url('./images/Flyer.jpg');
+    background-size: cover;
+    background-position: start;
+}
+.Patrick{
+    background: url('./images/Patrick.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.JM{
+    background: url('./images/JM.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.VO{
+    background: url('./images/VO.jpg');
+    background-size: cover;
+    background-position: start;
+}
+.Fund2{
+    background: url('./images/Fund2.png');
+    background-size: cover;
+    background-position: start;
+}
