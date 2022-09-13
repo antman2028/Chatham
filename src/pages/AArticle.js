@@ -29,7 +29,7 @@ const AArticle = () => {
         <Navbar size={windowSize.innerWidth}/> 
         <NewsContent
         title="Atkins Chatham Scholars Fund Co-Founder Patrick McCaw Tapped for Prestigious Jane Street AMP Program"
-        imgName="chatham"
+        imgName="Patrick"
         date="May 25, 2022"
         paragraphs= {["If you can make it in New York, you can make it anywhere.", 
         "This summer, Atkins Chatham Scholars Fund Co-Founder Patrick McCaw will spend five weeks in the city that never sleeps, learning about probability, statistics, computer programming, data analysis, game theory, and more. That's on top of a $5,000 scholarship from the Jane Street Academy of Math and Programming (AMP).",

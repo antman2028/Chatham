@@ -93,10 +93,9 @@ header ul li .an:hover{
 }
  
 .exit{
-    position: absolute;
     align-self: center;
-    justify-self: center;    
-    top: -8%;
+    justify-self: center;   
+    translate: 0 -7vh; 
 }
 
 .NavOverlay li{
@@ -105,11 +104,17 @@ header ul li .an:hover{
     padding: 1.5vh;
     justify-self: center ;
     align-self: center;
+    text-shadow: rgba(0, 0, 0, 0.2) 1.95px 1.95px 2.6px;
+
 }
 
 .b:visited{
     text-decoration: none;
     color:#5064a9;
+}
+.b{
+    color:#5064a9;
+    text-decoration: none;
 }
 
 .MainPullout h1{

@@ -51,6 +51,7 @@ const Leadership = () => {
          lastName="Starling"
          position='Vice President'
          contact1='false'
+         email="mailto:benpstarling@yahoo.com"
          />
         <LeaderCard
          firstName="Dawn" 
@@ -119,7 +120,7 @@ const Leadership = () => {
           firstName="Scott" 
           lastName="Oglesbee"
           position='President'
-          linkedIn='https://www.linkedin.com/in/alexdcoo'
+          linkedIn=''
           email="mailto:sboglesbee@gmail.com"
           contact1='false'
           />
@@ -127,7 +128,7 @@ const Leadership = () => {
          firstName="Ben" 
          lastName="Starling"
          position='Vice President'
-         linkedIn=''
+         email="mailto:benpstarling@yahoo.com"
          contact1='false'
          />
       </Box>

@@ -3,9 +3,9 @@ import '../navbar.css'
 import { Box } from '@mui/material'
 
 const Footer = (props) => {
-  let fonting = '2vh'
+  let fonting = '1.5vh'
   if (props.size < 1000){
-    fonting = '1.1vh'
+    fonting = '1vh'
   }
   return (
     <>

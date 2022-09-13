@@ -1,16 +1,14 @@
 import Act from './pages/act';
-import About from './pages/about';
 import Leadership from './pages/leadership';
 import Members from './pages/members';
 import News from './pages/news';
 import Home from './pages/NotesListPage';
-import Programs from './pages/programs';
 import Test from './pages/Test';
 import FundPage from './pages/FundPage';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import AArticle from './pages/AArticle';
-import Newnav from './components/Newnav';
-import MemberCard from './components/memberCard';
+import Article2 from './pages/Article2';
+import Article3 from './pages/Article3';
 
 function App() {
   return (
@@ -24,7 +22,9 @@ function App() {
           <Route path="/news" element={<News/>}/>
           <Route path="/tester" element={<Test/>}/>
           <Route path="/AtkinsScholarFund" element={<FundPage/>}/>
-          <Route path="/testarticle" element={<AArticle/>}/>
+          <Route path="/news/CoFounder-Jane-Street" element={<AArticle/>}/>
+          <Route path="/news/Vice-President-AFE" element={<Article2/>}/>
+          <Route path="/news/Chatham-Youth-Awards" element={<Article3/>}/>
         </Routes>
       </BrowserRouter>
   );

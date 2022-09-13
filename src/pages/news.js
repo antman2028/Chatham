@@ -48,6 +48,7 @@ const buttonVariants = {
       desription="If you can make it in New York, you can make it anywhere. This summer, Patrick McCaw will spend five weeks in NYC, learning about probability, statistics, computer programming, data analysis, game theory, and more. That's on top of a $5,000 scholarship."
       buttonLabel="Read The Article"
       imgName="Patrick"
+      reference="/news/CoFounder-Jane-Street"
       />
       <NewCard
       title="Chatham Youth Vice President Antonio Salinas Awarded $40,000 Amazon Future Engineer Scholarship"
@@ -55,6 +56,7 @@ const buttonVariants = {
       desription="Chatham Youth's own Antonio Salinas was awarded the $40,000 Amazon Future Engineer Scholarship. He'll be joining Amazon as a software engineering intern next summer."
       buttonLabel="Read The Article"
       imgName="chatham"
+      reference="/news/Vice-President-AFE"
       />
       <NewCard
       title="Chatham Youth and CEF Award $2,000 to JM's Michael Rodriguez"
@@ -62,6 +64,7 @@ const buttonVariants = {
       desription="Chatham Youth and CEF awarded the inaugural Atkins Chatham Scholars Fund to Jordan Matthews's own Michael Rodriguez."
       buttonLabel="Read The Article"
       imgName="JM"
+      reference='/news/Chatham-Youth-Awards'
       />
       <NewCard
       title="CN+R: Chatham Youth and CEF fundraise for full-ride scholarship for CCS student"
@@ -73,6 +76,8 @@ const buttonVariants = {
       That’s the banner of the Atkins Chatham Scholar Fund, a scholarship partnership between Chatham Education Foundation and Chatham Youth with the mission of sending “one needy Chathamite to the school of their dreams.”"
       buttonLabel="Read The Article"
       imgName="Flyer"
+      reference='https://chathamnewsrecord.com/stories/chatham-youth-fundraise-for-fullride-scholarship-for-ccs-student,8455'
+
       />
       <NewCard
       title="CCS's John McCann Interviews Chatham Youth Founder & Pres. Alexander Cook"
@@ -80,6 +85,8 @@ const buttonVariants = {
       desription="Chatham Youth Founder & President Alexander Cook shares the Chatham Youth story and how students like him are fighting for Chatham County's future."
       buttonLabel="Watch the Video"
       imgName="VO"
+      reference='https://www.facebook.com/ChathamCountySchoolsNC/videos/chatham-youth-chatham-scholars/437916750738353/'
+
       />
       <Footer size={windowSize.innerWidth}/>
     </>

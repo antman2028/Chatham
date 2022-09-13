@@ -1,5 +1,4 @@
 import Box from '@mui/material/Box'
-import { minHeight } from '@mui/system'
 import React from 'react'
 import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
@@ -62,7 +61,7 @@ const Act = () => {
       }}>
         <h1 className='card2Act'>Sponsor a Chatham Scholar</h1>
         <p className='card2Act'>Chip in as little as $20 to the Atkins Chatham Scholars Fund, and send one needy Chathamite to the school of their dreams.</p>
-        <Button variant='outlined' disabled={false}
+        <Button variant='outlined' disabled={false} href='https://www.gofundme.com/f/chathamscholars'
                   sx={{
                   color: '#5064a9',
                   borderRadius: 0,
@@ -72,7 +71,7 @@ const Act = () => {
                       color: '#f4f4e2',
                   }
                   }}>
-                  <a className='opposite' href="">Donate Now</a>
+                    Donate Now
                   </Button>
       </Box>
       <Box sx={{
@@ -95,7 +94,7 @@ const Act = () => {
       }}>
         <h1 className='card2Act'>Volunteer Your Time</h1>
         <p className='card2Act'>Volunteer anywhere, anytime in Chatham with CCS Serves.</p>
-        <Button variant='outlined' disabled={false}
+        <Button variant='outlined' disabled={false} href="https://chathamyouthnc.wixsite.com/ccsserves"
                   sx={{
                   color: '#5064a9',
                   borderRadius: 0,
@@ -105,7 +104,7 @@ const Act = () => {
                       color: '#f4f4e2',
                   }
                   }}>
-                  <a className='opposite' href="">Volunteer Today</a>
+                  Volunteer Today
                   </Button>
       </Box>
       <Box sx={{
@@ -171,12 +170,13 @@ const Act = () => {
       }}>
         <h1 style={{color:'white'}} className='card2Act'>Sponsor a Chatham Scholar</h1>
         <p className='card2Act'>Chip in as little as $20 to the Atkins Chatham Scholars Fund, and send one needy Chathamite to the school of their dreams.</p>
-        <Button variant='contained' disabled={false}
+        <Button variant='outlined' disabled={false} href='https://www.gofundme.com/f/chathamscholars'
                   sx={{
                   backgroundColor: '#5064a9',
                   borderRadius: 0,
+                  color:'white'
                   }}>
-                  <a style={{color:'white'}} href="">Donate Now</a>
+                    Donate Now
                   </Button>
       </Box>
       
@@ -197,12 +197,13 @@ const Act = () => {
       }}>
         <h1 style={{color:'white'}} className='card2Act'>Volunteer Your Time</h1>
         <p className='card2Act'>Volunteer anywhere, anytime in Chatham with CCS Serves.</p>
-        <Button variant='outlined' disabled={false}
+        <Button variant='outlined' disabled={false} href="https://chathamyouthnc.wixsite.com/ccsserves"
                   sx={{
                     backgroundColor: '#5064a9',
                     borderRadius: 0,
+                    color:'white'
                     }}>
-                  <a style={{color:'white'}} href="">Volunteer Today</a>
+                      Volunteer Today
                   </Button>
       </Box>
       

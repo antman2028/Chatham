@@ -5,11 +5,12 @@ import Newnav from '../components/Newnav'
 import Spacer from '../components/Spacer'
 import PageTitle from '../components/PageTitle'
 import Textbox from '../components/textbox'
-import { Link } from 'react-router-dom'
-import { Button, IconButton } from '@mui/material'
+import { Link as Link1 } from 'react-router-dom'
+import { Button, IconButton, Typography} from '@mui/material'
 import { motion } from 'framer-motion'
 import Footer from '../components/footer'
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import {Link as Link2 } from '@mui/material';
 
 const Home = () => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -92,7 +93,7 @@ const buttonVariants = {
           }}>
             <h1 className='card1Home'>About</h1>
             <p className='card1Home'>At Chatham Youth, our mission is to make youth voices heard from every corner of our county. Today, we're over 150 members strong and hard at work. Through the Atkins Chatham Scholars Fund, CCS Serves, and so much more, we're changing Chatham County, one initiative at a time.</p>
-            <Button variant='outlined' disabled={false}
+            <Button variant='outlined' disabled={false} href='https://www.facebook.com/ChathamCountySchoolsNC/videos/chatham-youth-chatham-scholars/437916750738353/'
                     sx={{
                     color: '#f4f4e2',
                     borderRadius: 0,
@@ -138,14 +139,14 @@ const buttonVariants = {
            <Button variant='outlined' disabled={false}
                     sx={{
                     color: '#5064a9',
-                    borderRadius: 0,
-                    
+                    borderRadius: '5px',
+                    borderColor:"#5064a9",
                     '&:hover': {
                         backgroundColor: '#5064a9',
                         color: '#f4f4e2',
                     }
                     }}>
-                    <Link className="opposite" to='/AtkinsScholarFund'>Learn More</Link>
+                    <Link1 className="opposite" to='/AtkinsScholarFund'>Learn More</Link1>
                     </Button>
           </Box>
           <Box sx={{
@@ -179,11 +180,11 @@ const buttonVariants = {
           }}>
             <h1 className='card2Home'> CCS Serves </h1>
             <p className='card2Home'>Chatham County Schools' Community Service Hub</p>
-            <Button variant='outlined' disabled={false}
+            <Button variant='outlined' disabled={false} href="https://chathamyouthnc.wixsite.com/ccsserves"
                     sx={{
                     color: '#5064a9',
-                    borderRadius: 0,
-                    
+                    borderRadius: '5px',
+                    borderColor:"#5064a9",
                     '&:hover': {
                         backgroundColor: '#5064a9',
                         color: '#f4f4e2',
@@ -257,7 +258,7 @@ const buttonVariants = {
           }}>
             <h1 className='card1Home'>About</h1>
             <p className='card1Home'>At Chatham Youth, our mission is to make youth voices heard from every corner of our county. Today, we're over 150 members strong and hard at work. Through the Atkins Chatham Scholars Fund, CCS Serves, and so much more, we're changing Chatham County, one initiative at a time.</p>
-            <Button variant='outlined' disabled={false}
+            <Button variant='outlined' disabled={false} href='https://www.facebook.com/ChathamCountySchoolsNC/videos/chatham-youth-chatham-scholars/437916750738353/'
                     sx={{
                     color: '#f4f4e2',
                     borderRadius: 0,
@@ -288,7 +289,8 @@ const buttonVariants = {
             flexGrow: 2,
             backgroundColor: 'orange',
             borderRadius: '15px',
-            boxShadow: '0 1px 5px #000'
+            boxShadow: '0 1px 5px #000', 
+            minHeight: '30vh'
 
           }}
           className='Fund2'
@@ -310,14 +312,14 @@ const buttonVariants = {
            <Button variant='outlined' disabled={false}
                     sx={{
                     color: '#5064a9',
-                    borderRadius: 0,
-                    
+                    borderRadius: '5px',
+                    borderColor: "#5064a9",
                     '&:hover': {
                         backgroundColor: '#5064a9',
                         color: '#f4f4e2',
                     }
                     }}>
-                    <Link className="opposite" to='/AtkinsScholarFund'>Learn More</Link>
+                    <Link1 className="opposite" to='/AtkinsScholarFund'>Learn More</Link1>
                     </Button>
           </Box>
           
@@ -341,7 +343,9 @@ const buttonVariants = {
             flexGrow:2,
             backgroundColor:'orange',
             borderRadius: '15px',
-            boxShadow: '0 1px 5px #000'
+            boxShadow: '0 1px 5px #000',
+            minHeight: '30vh'
+
 
           }}
           className='town'
@@ -358,11 +362,11 @@ const buttonVariants = {
           }}>
             <h1 className='card2Home'> CCS Serves </h1>
             <p className='card2Home'>Chatham County Schools' Community Service Hub</p>
-            <Button variant='outlined' disabled={false}
+            <Button variant='outlined' disabled={false} href="https://chathamyouthnc.wixsite.com/ccsserves"
                     sx={{
                     color: '#5064a9',
-                    borderRadius: 0,
-                    
+                    borderRadius: '5px',
+                    borderColor:"#5064a9",
                     '&:hover': {
                         backgroundColor: '#5064a9',
                         color: '#f4f4e2',
@@ -377,13 +381,13 @@ const buttonVariants = {
       <Box sx={{display:'flex', minHeight:'10vh'}}/>
       <section className='oldmanpic'>
         <Textbox 
-        title='" We make a living by what we get, but we make a life by what we give"' 
+        title='"We make a living by what we get, but we make a life by what we give"' 
         contents='Winston Churchill' 
         buttonTrue={false} 
         buttonContents="click me"
 
         />
-      </section>
+      </section> 
       <Footer size={windowSize.innerWidth} />
         </>
       }

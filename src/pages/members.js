@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Navbar from '../components/Navbar'
 import PageTitle from '../components/PageTitle'
 import '../navbar.css'
 import MemberCard from '../components/memberCard'
 import Footer from '../components/footer'
 import lst1 from '../firebase'
-import { getDocs, onSnapshot } from 'firebase/firestore'
+import { getDocs, addDoc, query, orderBy, limit} from 'firebase/firestore'
+import { Button, TextField } from '@mui/material'
 
 
 
@@ -13,8 +14,11 @@ const Members = () => {
 
   const [Users, setUsers] = useState([])
 
+  const q = query(lst1, orderBy('LastName'), limit(200));
+
+
   useEffect(() => {
-    getDocs(lst1)
+    getDocs(q)
       .then((snapshot) => {
         let temp = []
         snapshot.docs.forEach((doc) => {
@@ -44,6 +48,9 @@ const Members = () => {
       const {innerWidth, innerHeight} = window;
       return {innerWidth, innerHeight};
     }
+
+    
+    
   return (
     <>
       <Navbar size={windowSize.innerWidth}/>
@@ -51,7 +58,7 @@ const Members = () => {
         <PageTitle title="Members"/>
         {Users.map(name => (<MemberCard key={name.id} name={name.FirstName +" " + name.LastName}/>))}
       </div>
-      
+
       <Footer size={windowSize.innerWidth}/>
     </>
   )

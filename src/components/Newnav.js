@@ -22,7 +22,7 @@ const Newnav = (props) => {
 
     const variants = {
         open: {visibility: 'visible', opacity:1, transition:{ duration: 0.25 } },
-        closed: { opacity:0, visibility:'hidden', transition: { duration: 0.5 }},
+        closed: { visibility:'hidden',opacity:0, transition: { duration: 0.5 }},
         start: {opacity:0},
         FadeIn: {visibility:'visible', opacity: 1, scale: 1.5, transition:{ duration: 1 } },
         FadeIn2: {visibility:'visible', opacity: 1, scale: 1.5, transition:{ duration: 1.2 } }
@@ -76,38 +76,38 @@ const Newnav = (props) => {
                           <MenuOutlinedIcon/>
                       </IconButton>
                     </header>
-       <motion.div style={{zIndex:100}} variants={variants} animate={IsOpen ? 'open' : 'closed'} className="NavOverlay">
-       <IconButton  onClick={closing} className='exit' size='large' sx={{backgroundColor:"#5064a9", color:'#f4f4e2'}}>
-                <ClearIcon />
-       </IconButton>
-          <Box className="MainPullout" sx={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
-            <div className="logo">
-                    <Link to='/home'><img className='resize' src={require('./chathamyouthlogo.jpeg')}/></Link>
-            </div>
-            <h1>Chatham Youth</h1>
-                <motion.li onClick={closing} variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'} >
-                    <Link className="b" to="/home">Home</Link>
-                </motion.li>
-                <motion.li onClick={closing} variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
-                  <Link className="b" to="/home">About</Link>
-                </motion.li>
-                <motion.li onClick={closing} variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
-                  <Link className="b" to="/home">Programs</Link>
-                </motion.li>
-                <motion.li variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
-                  <Link className="b" to="/members">Members</Link>
-                </motion.li>
-                <motion.li variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
-                  <Link className="b" to="/act">Act</Link>
-                </motion.li>
-                <motion.li variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
-                  <Link className="b" to="/news">News</Link>
-                </motion.li>
-                <motion.li variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
-                  <Link className="b" to="/leadership">Leadership</Link>
-                </motion.li>
-            </Box>
-        </motion.div>
+                    <motion.div style={{zIndex:100}} variants={variants} animate={IsOpen ? 'open' : 'closed'} className="NavOverlay">
+                    <IconButton  onClick={closing} className='exit' size='large' sx={{backgroundColor:"#5064a9", color:'#f4f4e2'}}>
+                              <ClearIcon />
+                    </IconButton>
+                        <Box className="MainPullout" sx={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
+                          <div className="logo">
+                                  <Link to='/home'><img className='resize' src={require('./chathamyouthlogo.jpeg')}/></Link>
+                          </div>
+                          <h1>Chatham Youth</h1>
+                              <motion.li onClick={closing} variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'} >
+                                  <Link className="b" to="/home">Home</Link>
+                              </motion.li>
+                              <motion.li onClick={closing} variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
+                                <a className='b' href='/home#about'>About</a>
+                              </motion.li>
+                              <motion.li onClick={closing} variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
+                                <a className='b' href='/home#serve'>Programs</a>
+                              </motion.li>
+                              <motion.li variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
+                                <Link className="b" to="/members">Members</Link>
+                              </motion.li>
+                              <motion.li variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
+                                <Link className="b" to="/act">Act</Link>
+                              </motion.li>
+                              <motion.li variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
+                                <Link className="b" to="/news">News</Link>
+                              </motion.li>
+                              <motion.li variants={variants} initial={'start'} animate={IsOpen ? 'FadeIn' : 'closed'}>
+                                <Link className="b" to="/leadership">Leadership</Link>
+                              </motion.li>
+                          </Box>
+                      </motion.div>
     </> 
     
                     <section className='banner'>

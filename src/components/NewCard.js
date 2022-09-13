@@ -2,10 +2,10 @@ import React from 'react'
 import '../navbar.css'
 import { Button } from '@mui/material'
 import Box from '@mui/material/Box'
+import { Link } from 'react-router-dom'
 
 const NewCard = (props) => {
     const d = props.desription
-
   return (
     <>
         <div className='flexbox-container'> 
@@ -38,7 +38,7 @@ const NewCard = (props) => {
                     <h1 className='NewCard'>{props.title}</h1>
                     <h4 className='NewCard'>{props.date}</h4>
                     <p className='NewCard'>{props.desription}</p>
-                    <Button variant='outlined' disabled={false}
+                    <Button variant='outlined' disabled={false} href={props.reference}
                             sx={{
                             color: '#5064a9',
                             borderRadius: 0,
@@ -48,7 +48,7 @@ const NewCard = (props) => {
                                 color: '#f4f4e2',
                             }
                             }}>
-                            <a href={props.link}>{props.buttonLabel}</a>
+                                {props.buttonLabel}
                     </Button>
                 </div>
                 </Box>
